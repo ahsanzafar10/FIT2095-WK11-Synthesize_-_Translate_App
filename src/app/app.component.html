@@ -1,0 +1,25 @@
+<h1>FIT2095, Synthesize and Translate App</h1>
+
+Your Text in English <input type='text' name='no1' [(ngModel)]="textInEnglish" /> <br /><br /><br /><br />
+
+<h3>Select a Language</h3>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="fr" checked [(ngModel)]="chosenLanguage">
+    <label class="form-check-label" for="exampleRadios1">FR</label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="zh" [(ngModel)]="chosenLanguage">
+    <label class="form-check-label" for="exampleRadios2">ZH</label>
+</div>
+
+
+
+<button (click)="translate()">Submit Data</button> <br /><br /><br /><br /><br />
+
+
+<audio controls id="ap">
+    <source src={{mp3Location}} type="audio/mpeg">
+</audio>
+
+
+
